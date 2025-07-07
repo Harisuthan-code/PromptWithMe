@@ -1,46 +1,44 @@
+
 import { Routes, Route } from "react-router-dom";
-import Home from "./Comp/Home";
-import About from "./Comp/About";
-import Projects from "./Comp/Project";
-import Mainskill from "./Comp/Mainskill";
-import Contact from "./Comp/contact";
-import Navbar from "./Comp/Navbar";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import PromptList from "./Pages/PromptList";
+import PromptDetails from "./Pages/PromptDetails";
+import ThankYou from "./Pages/ThankYou";
+import NavBar from "./Comp/Navbar";
+import Footer from "./Comp/Footer";
 
+function App() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <NavBar />
 
+      {/* Main content grows to fill available space */}
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/prompts" element={<PromptList />} />
+          <Route path="/prompt-details" element={<PromptDetails />} />
+          <Route path="/thank-you" element={<ThankYou />} />
 
-const App =()=>{
+          {/* 404 fallback */}
+          <Route
+            path="*"
+            element={
+              <main className="flex justify-center items-center min-h-screen text-2xl">
+                404: Page Not Found
+              </main>
+            }
+          />
+        </Routes>
+      </main>
 
-  return(
-
-    <div className="text-white tracking-widest">
-
-      <Navbar/>
-
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Project" element={<Projects />} />
-        <Route path="/Skills" element={<Mainskill />} />
-        <Route path="/contact" element={<Contact />} />
-
-
-
-
-
-
-
-
-      </Routes>
-
-
-
-
+      <Footer />
     </div>
-
-
-  )
+  );
 }
 
-
-export default App
+export default App;
