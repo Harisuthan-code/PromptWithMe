@@ -16,7 +16,7 @@ const About = () => {
         {/* Image (optional, replace if needed) */}
         <div>
           <img
-            src="../public/images/Portfolioimage.jpg"
+            src="/images/Portfolioimage.jpg"
             alt="About Prompt Business"
             className="rounded-2xl shadow-lg"
           />
