@@ -19,12 +19,9 @@ const Footer = () => {
             Pinterest
           </a>
 
-          <a
-            href="/contact"
-            className="hover:text-white transition"
-          >
+          <Link to="/contact" className="hover:text-white transition">
             Contact
-          </a>
+          </Link>
 
           <a
             href="https://www.linkedin.com/in/hari-suthan-01665433b/"
