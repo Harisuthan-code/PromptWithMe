@@ -3,11 +3,13 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import PromptList from "./Pages/PromptList";
 import PromptDetails from "./Pages/PromptDetails";
 import ThankYou from "./Pages/ThankYou";
 import NavBar from "./Comp/Navbar";
 import Footer from "./Comp/Footer";
+import RefundPolicy from "./Pages/RefundPolicy";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import TermsAndConditions from "./Pages/TermsAndConditions";
 
 function App() {
   return (
@@ -20,9 +22,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/prompts" element={<PromptList />} />
-          <Route path="/prompt-details" element={<PromptDetails />} />
+          <Route path="/prompts" element={<PromptDetails />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+
 
           {/* 404 fallback */}
           <Route

@@ -4,21 +4,21 @@ const Home = () => {
   return (
     <main className="bg-white text-gray-800">
       {/* Hero Section */}
-    <section className="min-h-[100vh] flex flex-col justify-center items-center text-center px-6 py-16 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
-        
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-           Power Your Business Growth with AI Prompts
-        </h1>
-        <p className="text-lg md:text-xl max-w-xl mb-6">
-          Running a business without AI today is like racing without shoes. But using AI isn’t enough — you need the right prompts to win. That’s where we come in
-        </p>
-        <Link
-          to="/prompts"
-          className="bg-white text-blue-700 font-semibold py-3 px-6 rounded-xl shadow-md hover:bg-blue-100 transition"
-        >
-          Browse Prompt Packs
-        </Link>
-      </section>
+   <section className="min-h-[100vh] flex flex-col justify-center items-center text-center px-6 py-16 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight sm:leading-snug">
+    Power Your Business Growth <br className="block sm:hidden" /> with AI Prompts
+  </h1>
+  <p className="text-base sm:text-lg md:text-xl max-w-md sm:max-w-xl mb-6">
+    Running a business without AI today is like racing without shoes. But using AI isn’t enough — you need the right prompts to win. That’s where we come in.
+  </p>
+  <Link
+    to="/prompts"
+    className="bg-white text-blue-700 font-semibold py-3 px-6 rounded-xl shadow-md hover:bg-blue-100 transition"
+  >
+    Browse Prompt Packs
+  </Link>
+</section>
+
 
       {/* Benefits Section */}
       <section className="py-16 px-6 md:px-12 bg-gray-100">
@@ -66,29 +66,45 @@ const Home = () => {
             </div>
         </div>
 
-        <div className="text-center mt-10">
-          <Link
-            to="/prompts"
-            className="inline-block bg-blue-600 text-white py-3 px-6 rounded-xl hover:bg-blue-700 transition"
-          >
-            See All Prompt Packs
-          </Link>
-        </div>
       </section>
 
       {/* Final CTA */}
-      <section className="bg-indigo-700 text-white text-center py-16 px-6">
-        <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-        <p className="mb-6 text-lg">
-        Get AI guidance that helps your business grow faster by showing you what to do and what to avoid
-        </p>
-        <Link
-          to="/prompts"
-          className="bg-white text-indigo-700 font-semibold py-3 px-6 rounded-xl hover:bg-gray-100 transition"
-        >
-          Buy Your First Prompt Pack
-        </Link>
-      </section>
+<section className="w-full px-6 py-12 font-sans leading-relaxed bg-gray-50 rounded-lg shadow-sm">
+  <h2 className="text-2xl md:text-3xl text-gray-900 mb-6 font-bold text-center tracking-tight">
+    What Are AI Prompts & Why They Matter
+  </h2>
+
+  <p className="mb-8 text-gray-800 text-base md:text-lg max-w-4xl mx-auto">
+    AI prompts are simple instructions you give AI tools like ChatGPT to get useful answers, ideas, and content quickly. They act like <em className="italic font-semibold text-indigo-600">magic keys</em> unlocking AI’s full potential for your business.
+  </p>
+
+  <h3 className="text-xl md:text-2xl text-gray-900 mb-5 font-semibold text-center">
+    Why AI Prompts Help Your Business
+  </h3>
+
+  <ul className="list-disc list-inside space-y-4 text-gray-700 text-sm md:text-base max-w-4xl mx-auto mb-10">
+    <li>
+      <strong className="font-semibold">Save Time:</strong> Write emails, ads, or posts in seconds with the right prompts.
+    </li>
+    <li>
+      <strong className="font-semibold">Boost Creativity:</strong> Get fresh marketing ideas and catchy content.
+    </li>
+    <li>
+      <strong className="font-semibold">Cut Costs:</strong> No need to hire writers or marketers for every task.
+    </li>
+    <li>
+      <strong className="font-semibold">Stay Competitive:</strong> Use AI to keep your business innovative and agile.
+    </li>
+  </ul>
+
+  <p className="text-gray-800 text-base md:text-lg font-medium text-center max-w-4xl mx-auto">
+    AI prompts help you work smarter and grow faster — no tech skills required. Start using them today and see the difference.
+  </p>
+</section>
+
+
+
+
     </main>
   );
 };
