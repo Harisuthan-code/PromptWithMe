@@ -14,14 +14,6 @@ const Footer = () => {
             Contact
           </Link>
 
-          <a
-            href="https://www.linkedin.com/company/prompt-with-me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            LinkedIn Profile
-          </a>
 
           {/* Legal Internal Links */}
           <Link to="/refund-policy" className="hover:text-white transition">
