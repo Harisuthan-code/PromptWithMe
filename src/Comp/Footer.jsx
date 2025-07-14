@@ -9,27 +9,18 @@ const Footer = () => {
         <p className="text-sm">&copy; {new Date().getFullYear()} Hari Prompt Solutions. All rights reserved.</p>
 
         <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 text-sm">
-          {/* External Links */}
-          <a
-            href="https://www.pinterest.com/PromptwithMe/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            Pinterest
-          </a>
 
           <Link to="/contact" className="hover:text-white transition">
             Contact
           </Link>
 
           <a
-            href="https://www.linkedin.com/in/hari-suthan-01665433b/"
+            href="https://www.linkedin.com/company/prompt-with-me/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
           >
-            My LinkedIn Profile
+            LinkedIn Profile
           </a>
 
           {/* Legal Internal Links */}
